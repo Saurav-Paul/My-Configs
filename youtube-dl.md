@@ -16,7 +16,7 @@ brew install youtube-dl
 
 
 
-*Also download ffmpeg
+# Also download ffmpeg
 
 # Download videos
 
@@ -34,5 +34,10 @@ youtube-dl -f best url
 youtube-dl -f bestvideo+bestaudio url
 
 youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' url
+
+# youtube-dl config
+Adding this line -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' to the ~/.config/youtube-dl/config will help to set defalut
+and it also can be ignore very easily by --ignore-config
+
 
 
