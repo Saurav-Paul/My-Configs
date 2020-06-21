@@ -86,11 +86,22 @@ nnoremap<leader>R :!ai -r %<Enter>
 nnoremap<leader>a :!Cp add<Enter>
 nnoremap<leader>s :w<Enter>
 nnoremap<leader>q :wq<Enter>
+:imap JJ <Esc>
+" Nerdtree
 
+nnoremap<C-n> :NERDTreeToggle<Enter>
+" tab management
+nnoremap tn :tabnew<Space> 
+
+nnoremap tk :tabnext<CR> 
+nnoremap tj :tabprev<CR> 
+
+nnoremap th :tabfirst<CR> 
+nnoremap tl :tablast<CR> 
 
 " copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
+vmap <C-c> "+yi<ESC>
+vmap <C-x> "+c<ESC>
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC> "+pa
 " Textmate holdouts
