@@ -126,12 +126,22 @@ fi
 #~ }
 
 
-jarvis () {
-python3 /media/saurav/Programming/GIthub/voice-assitant-python/run.py $PWD -arg $@
+jar () {
+python3 /media/saurav/Programming/GIthub/dev/voice-assitant-python/run.py $PWD -arg $@
 }
 
+dev (){
+source /media/saurav/Programming/GIthub/dev/bin/activate
+echo "dev activated successfully"
+}
 
 alias cc='clear'
+
+
+reload(){
+    source ~/.bashrc
+    echo "bash reloaded"
+}
 
 #~ export PS1="\u "
 #~ export PS1="\u@\h>\d\@ "
