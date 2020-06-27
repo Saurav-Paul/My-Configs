@@ -25,7 +25,7 @@ set relativenumber
 set ruler
 
 " Blink cursor on error instead of beeping (grr)
-set visualbell
+"set visualbell
 
 " Encoding
 set encoding=utf-8
@@ -81,11 +81,13 @@ vnoremap <F1> :set invfullscreen<CR>
 " Custom keymap
 
 nnoremap<leader>t :!Cp test %<Enter>
-nnoremap<leader>r :!ai -r -10 %<Enter>
-nnoremap<leader>R :!ai -r %<Enter>
+nnoremap<leader>r :!Cp -r -100 %<Enter>
+nnoremap<leader>R :!Cp -r %<Enter>
 nnoremap<leader>a :!Cp add<Enter>
 nnoremap<leader>s :w<Enter>
 nnoremap<leader>q :wq<Enter>
+nnoremap gl $
+nnoremap gh 0
 :imap JJ <Esc>
 " Nerdtree
 
@@ -121,6 +123,6 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 "set background=dark
 "let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
-" colorscheme solarized
+"put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
+"in ~/.vim/colors/ and uncomment:
+"colorscheme solarized
